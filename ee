@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+ <style>
+ul.mm li{display: inline-block;}
+ul.mm li a{display: inline-block; text-decoration: none;padding-top: 5px;padding-right: 5px;}
+ul.sub  {display: none; position: absolute;}
+ul.opt {display: none; position: absolute;}
+ul.mm li:hover{background-color: yellow;}
+
+ul.mm li:hover ul.sub{
+    display: block;
+    width: 110px;
+    background-color: rgb(200, 184, 214);
+    
+}
+ul.sub li:hover ul.Opt{
+    display: block;
+    width: 110px;
+    background-color:rgb(192, 188, 243);
+}
+   
+   
+  
+ </style> 
+</head>
+
+
+<body style="direction:rtl;">
+    <div style="background-color:rgb(177, 238, 233); height: 40px;">
+    <ul class="mm">
+        <li>
+            <a href="">menu1</a> 
+        </li>
+            <li>
+                <a href="">menu2</a> 
+                <ul class="sub">
+                    <li>
+                        <a href="">sub1</a>
+                        <ul class="opt">
+                            <li><a href="">option1</a></li>
+                            <li ><a href="">option2</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="">sub2</a>
+                        <ul class="opt">
+                            <li><a href="">option3</a></li>
+                            <li><a href="">option4</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                </ul>
+            </li> 
+        
+        <li>
+            <a href="">menu3</a> 
+        </li>
+        <li>
+            <a href="">menu4</a> 
+        </li>
+    </ul>
+    </div>
+
+</body>
+</html>
